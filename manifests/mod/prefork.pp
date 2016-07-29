@@ -1,4 +1,7 @@
 class apache::mod::prefork (
+  $maxconnectionsperchild = "0",
+  $maxrequestworkers   = "128",
+  $listenbacklog       = "200",
   $startservers        = '8',
   $minspareservers     = '5',
   $maxspareservers     = '20',

@@ -3,6 +3,7 @@
   MinSpareServers     <%= @minspareservers %>
   MaxSpareServers     <%= @maxspareservers %>
   ServerLimit         <%= @serverlimit %>
-  MaxClients          <%= @maxclients %>
-  MaxRequestsPerChild <%= @maxrequestsperchild %>
+  MaxConnectionsPerChild <%= @maxconnectionsperchild %>
+  MaxRequestWorkers   <%= @maxrequestworkers %>
+  ListenBackLog       <%= @listenbacklog %>
 </IfModule>
